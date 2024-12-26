@@ -2,7 +2,7 @@ pipeline {
     agent any  // Runs on any available agent
 
     tools {
-        sonar 'sonar-scanner' // This refers to the configured tool in Jenkins, which is typically lowercase
+        sonar-scanner 'sonar-scanner' // This refers to the configured tool in Jenkins, which is typically lowercase
     }
 
     environment {
@@ -27,6 +27,7 @@ pipeline {
         stage('SONAR SCAN') {
             steps {
                 // Run SonarQube Scanner to analyze the code
+
                 sh '''
                     sonar-scanner \
                         -Dsonar.organization=developer-org-test \
