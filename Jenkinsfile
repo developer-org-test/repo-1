@@ -11,7 +11,7 @@ pipeline {
     }
     
     stages {
-        stage('DIRECTORY CONTENTS') {
+        stage('DIRECTORYbfgjknblkftklkfmklrmklr CONTENTS') {
             steps {
                 // Runs a shell command and echoes a message
                 sh 'ls -a'
