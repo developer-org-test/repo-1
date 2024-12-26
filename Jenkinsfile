@@ -2,7 +2,7 @@ pipeline {
     agent any  // Runs on any available agent
 
     tools {
-    sonarScanner 'SonarScanner'  // This refers to the configured tool in Jenkins, which is typically lowercase
+        sonar 'sonar-scanner' // This refers to the configured tool in Jenkins, which is typically lowercase
     }
 
     environment {
