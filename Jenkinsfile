@@ -9,7 +9,7 @@ pipeline {
         // Define environment variables if needed
         MY_VAR = 'Some value'
     }
-
+    
     stages {
         stage('DIRECTORY CONTENTS') {
             steps {
