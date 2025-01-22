@@ -2,11 +2,11 @@ import express from 'express'
 import cors from 'cors'
 
 const app = express();
-const port = 8000;
+const port = process.env.PORT || 8000;
 
 const corsOptions = {
   origin: '*', // Allow requests from this origin
-  methods: 'GET', // Allow only GET and POST methods
+  methods: '*', // Allow only GET and POST methods
   allowedHeaders: 'Content-Type, Authorization', // Allow specific headers
 };
 
